@@ -16,7 +16,7 @@ const ResumeUploader = () => {
     formData.append('resume', file);
 
     try {
-      const response = await axios.post('process.env.REACT_APP_API_URL', formData, {
+      const response = await axios.post("https://job-recommender-system-1.onrender.com/recommend", formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
